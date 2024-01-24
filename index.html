@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="./Netflixlogo.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="w-full">
+      <div
+        class="w-full h-[800px] relative max-[800px]:h-[600px] max-[600px]:h-[500px]"
+      >
+        <img
+          src="./Netflix Background.jpg"
+          class="object-cover w-full h-full max-[800px]:h-[600px] max-[600px]:h-[500px]"
+        />
+        <div
+          class="absolute top-0 left-0 w-full h-full bg-black opacity-60 max-[800px]:h-[600px] max-[600px]:h-[500px]"
+        ></div>
+        <div class="w-full absolute top-5 left-0 z-20">
+          <div
+            class="w-[80%] mx-auto flex justify-between items-center px-2 max-[1200px]:w-[95%]"
+          >
+            <img
+              src="./Netflix First Logo.png"
+              class="bg-transparent w-[180px] h-[90px]"
+            />
+            <a
+              href="#"
+              class="bg-[#E50914] px-4 py-2 rounded text-white font-medium hover:bg-[#A50814] transition duration-500"
+              >Sign In</a
+            >
+          </div>
+          <div
+            class="w-[70%] mx-auto my-4 p-2 max-[1200px]:w-[90%] max-[600px]:w-[95%]"
+          >
+            <div
+              class="w-full h-[600px] flex flex-col gap-8 items-center justify-center max-[800px]:h-[400px] max-[600px]:h-[343px] max-[600px]:gap-4"
+            >
+              <p
+                class="text-5xl font-bold text-white text-center max-[1000px]:text-3xl w-full max-[600px]:text-2xl"
+              >
+                Unlimited movies, TV shows, and more
+              </p>
+              <p
+                class="text-3xl font-medium text-white text-center max-[1000px]:text-2xl w-full max-[600px]:text-xl"
+              >
+                Watch anywhere. Cancel anytime.
+              </p>
+              <p
+                class="text-2xl font-medium text-white text-center max-[1000px]-text-xl max-[800px]:text-[18px] w-full max-[600px]:text-[16px]"
+              >
+                Ready to watch? Enter your email to create or restart your
+                membership.
+              </p>
+              <div
+                class="w-[80%] mx-auto flex items-center gap-8 max-[1200px]:w-[95%] max-[700px]:flex-col max-[700px]:gap-2"
+              >
+                <input
+                  type="text"
+                  placeholder="Email address"
+                  class="w-[60%] p-4 rounded bg-transparent outline-none text-gray-100 border border-gray-50 max-[1200px]:w-[70%]"
+                />
+                <button
+                  class="text-2xl text-white p-3 rounded outline-none bg-[#E50914] hover:bg-[#A50814] transition duration-500 max-[900px]:text-[16px] max-[900px]:p-2 max-[600px]:py-[1px] max-[600px]:text-[14px]"
+                >
+                  Get Started >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full h-[600px] relative my-2 bg-black">
+        <div
+          class="absolute top-0 left-0 w-full h-full bg-black opacity-60"
+        ></div>
+        <div class="w-full absolute top-5 left-0 z-20">
+          <div
+            class="w-[80%] mx-auto flex justify-between items-center px-2 h-[500px] max-[1050px]:w-[95%] max-[700px]:flex-col"
+          >
+            <div
+              class="w-[40%] flex flex-col items-center justify-center gap-10 max-[700px]:w-[95%] max-[700px]:mx-auto max-[700px]:gap-4"
+            >
+              <p
+                class="w-full text-5xl font-bold text-white max-[1050px]:text-3xl"
+              >
+                Enjoy on your TV
+              </p>
+              <p class="text-2xl font-medium text-white max-[1050px]:text-xl">
+                Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
+                Blu-ray players, and more.
+              </p>
+            </div>
+            <div
+              class="w-[50%] relative max-[700px]:w-[80%] max-[700px]:mx-auto max-[560px]:w-[95%]"
+            >
+              <img
+                alt=""
+                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+                class="object-cover"
+              />
+              <div
+                class="w-[80%] absolute transform translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%] z-[-1]"
+              >
+                <video autoplay playsinline muted loop>
+                  <source
+                    src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full h-[600px] relative mb-2 bg-black">
+        <div
+          class="absolute top-0 left-0 w-full h-[600px] bg-black opacity-60"
+        ></div>
+        <div class="w-full absolute top-5 left-0 z-20">
+          <div
+            class="w-[80%] mx-auto flex justify-between items-center px-2 h-[500px] max-[1090px]:w-[95%] max-[1090px]:flex-col"
+          >
+            <div
+              class="w-[50%] relative max-[1090px]:w-[60%] max-[800px]:w-[70%] max-[600px]:w-[80%] max-[550px]:w-[90%] max-[500px]:w-[95%]"
+            >
+              <img
+                alt=""
+                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
+                class="object-cover"
+              />
+              <div
+                class="w-[60%] bg-black border border-gray-400 rounded-md absolute top-[70%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] p-4 flex items-center justify-between gap-4 max-[1090px]:w-[95%] max-[1090px]:mx-auto max-[1300px]:w-[70%] max-[900px]:top-[80%] max-[900px]:w-[90%]"
+              >
+                <img
+                  src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png"
+                  class="object-cover w-[60px] max-[1300px]:w-[50px]"
+                />
+                <div class="flex flex-col gap-2 items-center justify-center">
+                  <p class="text-white font-medium max-[1300px]:text-[14px]">
+                    Stranger Things
+                  </p>
+                  <span
+                    class="text-[14px] text-[#0071EB] font-light max-[1300px]:text-[12px]"
+                    >Downloading...</span
+                  >
+                </div>
+                <div
+                  data-uia="nmhp-card-animation-asset-custom"
+                  aria-hidden="true"
+                  class="default-ltr-cache-1q4up1i e15c37ii5"
+                ></div>
+              </div>
+            </div>
+            <div
+              class="w-[40%] flex flex-col items-center justify-center gap-10 max-[1090px]:w-[95%] max-[1090px]:mx-auto max-[1090px]:gap-4"
+            >
+              <p
+                class="w-full text-5xl font-bold text-white max-[1090px]:text-3xl text-center max-[800px]:text-2xl"
+              >
+                Download your shows to watch offline
+              </p>
+              <p
+                class="text-2xl font-medium text-white max-[1090px]:w-full max-[1090px]:text-xl text-center max-[800px]:text-[16px]"
+              >
+                Save your favorites easily and always have something to watch.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full h-[500px] relative mb-2 bg-black">
+        <div
+          class="absolute top-0 left-0 w-full h-[500px] bg-black opacity-60"
+        ></div>
+        <div class="w-full absolute top-5 left-0 z-20">
+          <div
+            class="w-[60%] mx-auto flex justify-between items-center px-2 h-[500px] max-[600px]:w-[80%] max-[600px]:w-[90%]"
+          >
+            <div
+              class="w-[45%] flex flex-col items-center justify-center gap-10 max-[1050px]:w-[90%]"
+            >
+              <p
+                class="w-full text-5xl font-bold text-white max-[600px]:text-3xl max-[600px]:text-center"
+              >
+                Watch everywhere
+              </p>
+              <p
+                class="w-full font-medium text-white max-[600px]:text-xl max-[600px]:text-center"
+              >
+                Stream unlimited movies and TV shows on your phone, tablet,
+                laptop, and TV.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full h-[600px] relative mb-2 bg-black">
+        <div
+          class="absolute top-0 left-0 w-full h-full bg-black opacity-60"
+        ></div>
+        <div class="w-full absolute top-5 left-0 z-20">
+          <div
+            class="w-[80%] mx-auto flex justify-between items-center px-2 h-[500px] max-[850px]:w-[95%] max-[850px]:flex-col"
+          >
+            <div
+              class="w-[50%] relative max-[850px]:w-[60%] max-[850px]:mx-auto max-[650px]:w-[80%] max-[530px]:w-[90%] max-[450px]:w-[95%]"
+            >
+              <img alt="" src="./Img1.png" class="object-cover" />
+            </div>
+            <div
+              class="w-[40%] flex flex-col items-center justify-center gap-10 max-[850px]:w-[90%] max-[850px]:mx-auto max-[850px]:gap-4"
+            >
+              <p
+                class="w-full text-5xl font-bold text-white max-[1100px]:text-3xl max-[450px]:text-2xl"
+              >
+                Enjoy on your TV
+              </p>
+              <p
+                class="text-2xl font-medium text-white max-[1100px]:text-xl max-[450px]:text-[16px]"
+              >
+                Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
+                Blu-ray players, and more.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full h-[1500px] relative mb-2 bg-black max-[920px]:h-[1800px] max-[450px]:h-[2000px]">
+        <div
+          class="absolute top-0 left-0 w-full h-full bg-black opacity-60"
+        ></div>
+        <div class="w-full absolute top-6 left-0 z-20">
+          <p
+            class="text-white z-10 text-5xl text-center py-4 font-bold max-[800px]:text-3xl max-[600px]:text-2xl"
+          >
+            Frequently Asked Questions
+          </p>
+          <div
+            class="w-[80%] mx-auto my-4 flex flex-col gap-4 items-center justify-center max-[1000px]:w-[90%] max-[800px]:w-[95%]"
+          >
+            <div class="w-full flex flex-col">
+              <div
+                class="questions-asked w-full bg-gray-800 flex justify-between items-center px-4 py-6 cursor-pointer"
+              >
+                <p
+                  class="text-white text-2xl font-medium max-[800px]:text-xl max-[600px]:text-[16px]"
+                >
+                  What is Netflix?
+                </p>
+                <button
+                  class="text-5xl text-white font-medium max-[800px]:text-3xl max-[600px]:text-2xl max-[450px]:text-xl"
+                >
+                  +
+                </button>
+              </div>
+              <div
+                class="questions-answered w-full bg-gray-800 px-4 py-6 text-white border border-t-1 border-r-0 border-l-0 border-b-0 border-gray-400"
+              >
+                Netflix is a streaming service that offers a wide variety of
+                award-winning TV shows, movies, anime, documentaries, and more
+                on thousands of internet-connected devices. You can watch as
+                much as you want, whenever you want without a single commercial
+                – all for one low monthly price. There's always something new to
+                discover and new TV shows and movies are added every week!
+              </div>
+            </div>
+            <div class="w-full flex flex-col">
+              <div
+                class="questions-asked w-full bg-gray-800 flex justify-between items-center px-4 py-6 cursor-pointer"
+              >
+                <p
+                  class="text-white text-2xl font-medium max-[800px]:text-xl max-[600px]:text-[16px]"
+                >
+                  How much does Netflix cost?
+                </p>
+                <button
+                  class="text-5xl text-white font-medium max-[800px]:text-3xl max-[600px]:text-2xl max-[450px]:text-xl"
+                >
+                  +
+                </button>
+              </div>
+              <div
+                class="questions-answered w-full bg-gray-800 px-4 py-6 text-white border border-t-1 border-r-0 border-l-0 border-b-0 border-gray-400"
+              >
+                Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
+                streaming device, all for one fixed monthly fee. Plans range
+                from USD 2.99 to USD 9.99 a month. No extra costs, no contracts.
+              </div>
+            </div>
+            <div class="w-full flex flex-col">
+              <div
+                class="questions-asked w-full bg-gray-800 flex justify-between items-center px-4 py-6 cursor-pointer"
+              >
+                <p
+                  class="text-white text-2xl font-medium max-[800px]:text-xl max-[600px]:text-[16px]"
+                >
+                  How do I cancel?
+                </p>
+                <button
+                  class="text-5xl text-white font-medium max-[800px]:text-3xl max-[600px]:text-2xl max-[450px]:text-xl"
+                >
+                  +
+                </button>
+              </div>
+              <div
+                class="questions-answered w-full bg-gray-800 px-4 py-6 text-white border border-t-1 border-r-0 border-l-0 border-b-0 border-gray-400"
+              >
+                Netflix is flexible. There are no pesky contracts and no
+                commitments. You can easily cancel your account online in two
+                clicks. There are no cancellation fees – start or stop your
+                account anytime.
+              </div>
+            </div>
+
+            <div class="w-full flex flex-col">
+              <div
+                class="questions-asked w-full bg-gray-800 flex justify-between items-center px-4 py-6 cursor-pointer"
+              >
+                <p
+                  class="text-white text-2xl font-medium max-[800px]:text-xl max-[600px]:text-[16px]"
+                >
+                  What can I watch on Netflix?
+                </p>
+                <button
+                  class="text-5xl text-white font-medium max-[800px]:text-3xl max-[600px]:text-2xl max-[450px]:text-xl"
+                >
+                  +
+                </button>
+              </div>
+              <div
+                class="questions-answered w-full bg-gray-800 px-4 py-6 text-white border border-t-1 border-r-0 border-l-0 border-b-0 border-gray-400"
+              >
+                Netflix has an extensive library of feature films,
+                documentaries, TV shows, anime, award-winning Netflix originals,
+                and more. Watch as much as you want, anytime you want.
+              </div>
+            </div>
+
+            <div class="w-full flex flex-col">
+              <div
+                class="questions-asked w-full bg-gray-800 flex justify-between items-center px-4 py-6 cursor-pointer"
+              >
+                <p
+                  class="text-white text-2xl font-medium max-[800px]:text-xl max-[600px]:text-[16px]"
+                >
+                  Is Netflix good for kids?
+                </p>
+                <button
+                  class="text-5xl text-white font-medium max-[800px]:text-3xl max-[600px]:text-2xl max-[450px]:text-xl"
+                >
+                  +
+                </button>
+              </div>
+              <div
+                class="questions-answered w-full bg-gray-800 px-4 py-6 text-white border border-t-1 border-r-0 border-l-0 border-b-0 border-gray-400"
+              >
+                The Netflix Kids experience is included in your membership to
+                give parents control while kids enjoy family-friendly TV shows
+                and movies in their own space. Kids profiles come with
+                PIN-protected parental controls that let you restrict the
+                maturity rating of content kids can watch and block specific
+                titles you don’t want kids to see.
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-[80%] mx-auto flex flex-col justify-center items-center gap-4 my-16 max-[800px]:w-[90%] max-[600px]:w-[95%]"
+          >
+            <p
+              class="text-2xl font-medium text-white text-center max-[800px]:text-xl max-[410px]:text-[16px]"
+            >
+              Ready to watch? Enter your email to create or restart your
+              membership.
+            </p>
+            <div
+              class="w-[70%] mx-auto flex items-center gap-8 justify-center max-[1200px]:w-[80%] max-[1200px]:gap-4 max-[800px]:flex-col max-[800px]:w-[90%] max-[600px]:w-[95%]"
+            >
+              <input
+                type="text"
+                placeholder="Email address"
+                class="w-[60%] p-3 rounded bg-transparent outline-none text-gray-100 border border-gray-50 max-[800px]:w-[90%] max-[600px]:w-[95%]"
+              />
+              <button
+                class="text-2xl text-white p-2 rounded outline-none bg-[#E50914] hover:bg-[#A50814] transition duration-500 max-[800px]:text-xl max-[600px]:text-[16px]"
+              >
+                Get Started >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full h-[420px] relative mb-2 bg-black max-[1100px]:h-[500px] max-[750px]:h-[600px] max-[560px]:h-[800px]"
+      >
+        <div
+          class="absolute top-0 left-0 w-full h-[400px] bg-black opacity-60 max-[1100px]:h-[480px] max-[750px]:h-[580px] max-[560px]:h-[780px]"
+        ></div>
+        <div class="w-full absolute top-5 left-0 z-20">
+          <div class="w-[80%] mx-auto mt-8 mb-2">
+            <a href="#" class="text-white underline">Questions? Contact us.</a>
+          </div>
+          <div
+            class="w-[80%] mx-auto my-12 grid grid-cols-4 gap-8 max-[1100px]:grid-cols-3 max-[750px]:grid-cols-2 max-[750px]:gap-4 max-[560px]:grid-cols-1"
+          >
+            <a href="#" class="text-white underline text-sm">FAQ</a>
+            <a href="#" class="text-white underline text-sm">Help Center</a>
+            <a href="#" class="text-white underline text-sm">Account</a>
+            <a href="#" class="text-white underline text-sm">Media Center</a>
+            <a href="#" class="text-white underline text-sm"
+              >Investor Relations</a
+            >
+            <a href="#" class="text-white underline text-sm">Jobs</a>
+            <a href="#" class="text-white underline text-sm">Ways to Watch</a>
+            <a href="#" class="text-white underline text-sm">Terms of Use</a>
+            <a href="#" class="text-white underline text-sm">Privacy</a>
+            <a href="#" class="text-white underline text-sm"
+              >Cookie Preferences</a
+            >
+            <a href="#" class="text-white underline text-sm"
+              >Corporate Information</a
+            >
+            <a href="#" class="text-white underline text-sm">Contact Us</a>
+            <a href="#" class="text-white underline text-sm">Speed Test</a>
+            <a href="#" class="text-white underline text-sm">Legal Notices</a>
+            <a href="#" class="text-white underline text-sm">Only on Netflix</a>
+          </div>
+          <div class="w-[80%] mx-auto mb-4">
+            <a href="#" class="text-white underline text-sm text-gray-300"
+              >Netflix Ethiopia-Cloned by Alem Gebremichael</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
